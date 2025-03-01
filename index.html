@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshbooks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Keshbooks</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart <span id="cart-count">0</span></a>
+                <a href="login.html">Login</a>
+                <button class="dark-mode-toggle" id="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="book-section">
+            <div class="search-filter">
+                <input type="text" id="search" placeholder="Search books...">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="NCERT">NCERT</option>
+                    <option value="CBSE">CBSE</option>
+                    <option value="State Board">State Board</option>
+                    <option value="Reference">Reference</option>
+                    <option value="Competitive Exams">Competitive Exams</option>
+                </select>
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="book-list">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Keshbooks. All rights reserved.</p>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
